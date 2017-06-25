@@ -22,6 +22,5 @@ begin
   end;
  end;
  k := n * n - a * b;
-(* k := (n-a) * (n-b) + (n-a) * b + a * (n-b); *)
  writeln(k)
 end.
