@@ -1,7 +1,7 @@
 program krompir;
 var
  n,a,b,k: Int64;
- m,i,x,y: integer;
+ m,i,x,y: Longint;
  xfree, yfree: array [1..1000000] of boolean;
 begin
  readln(n, m);
@@ -22,5 +22,6 @@ begin
   end;
  end;
  k := n * n - a * b;
+(* k := (n-a) * (n-b) + (n-a) * b + a * (n-b); *)
  writeln(k)
 end.
